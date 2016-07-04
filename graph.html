@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>ОНЛАЙН СИСТЕМА ОБРАЗОВАНИЯ</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div>Дискретная математика</div>
+        </header>
+        <main>
+            <!-- Ребята не стоит вскрывать этот код. Вы молодые, шутливые, вам все легко. Это не то. Это не Чикатило и даже не архивы спецслужб. Сюда лучше не лезть. Серьезно, любой из вас будет жалеть. Лучше закройте код и забудьте что тут писалось. Я вполне понимаю что данным сообщением вызову дополнительный интерес, но хочу сразу предостеречь пытливых - стоп. Остальные просто не найдут. -->
+            <input type="radio" name="field" value="theory" id="theory">
+            <section class="theory">
+                <div class="text field">
+                    <div class="text-field">
+                        <h1>Граф</h1>
+                        <p>Графом называется пересечение двух множеств: множества вершин и связей между ними.</p>
+                        <h2>Матрица смежности</h2>
+                        <p>Один из способов представления графа - матрица смежности - квадратная матрица размером nxn, где n - количество вершин. На пересечении столбца i и строки j ставится единица, если между этими вершинами есть связь, в противном случае - ставится ноль.</p>
+                        <p>В следующем задании вам предстоит построить один из простых четырёхвершинных графов. Чтобы приступить к заданию, нажмите на стрелку. Помните, что всегда сможете вернуться к теории.</p>
+                    </div>
+                </div>
+                <label for="theory"><div class="arrow"></div></label>
+            </section>
+            <input type="radio" name="field" value="task" id="fields">
+            <section class="fields">
+                <label for="fields"><div class="reverse arrow"></div></label>
+                <div class="editor field"><div id="editor"></div></div>
+                <div class="container">
+                    <div class="task field" id="task"></div>
+                    <div class="result field" class="iframe" id="iframe"></div>
+                    <div class="buttons">
+                        <button class="button" onclick="visualizeGraph('def')"><div class="visualize"></div></button>
+                        <button class="button check-btn" id="check"><div class="check"></div></button>
+                        <button onclick="location.href='./graph2.html'" class="button next-btn" id="next" disabled><div class="next"></div></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div>Технологии разработки цифровых ресурсов, P3320, Селиверстов Артём, 2016</div>
+        </footer>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src='http://d3js.org/d3.v3.min.js'></script>
+        <script src="http://chaijs.com/chai.js"></script>
+        <script src="./js/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/sigma/build/sigma.min.js"></script>
+        <script src="./js/sigma/build/plugins/sigma.parsers.json.min.js"></script>
+        <script src="./js/graph.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

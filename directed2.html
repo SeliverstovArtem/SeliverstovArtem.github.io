@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>ОНЛАЙН СИСТЕМА ОБРАЗОВАНИЯ</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div>Дискретная математика</div>
+        </header>
+        <main>
+            <!-- Ребята не стоит вскрывать этот код. Вы молодые, шутливые, вам все легко. Это не то. Это не Чикатило и даже не архивы спецслужб. Сюда лучше не лезть. Серьезно, любой из вас будет жалеть. Лучше закройте код и забудьте что тут писалось. Я вполне понимаю что данным сообщением вызову дополнительный интерес, но хочу сразу предостеречь пытливых - стоп. Остальные просто не найдут. -->
+            <input type="radio" name="field" value="theory" id="theory">
+            <section class="theory">
+                <div class="text field">
+                    <div class="text-field">
+                        <h1>Ориентированный граф</h1>
+                        <p>Все графы делятся на ориентированные и неориентированные. Граф, рёбрам которого присовено направление. Все рассмотренные раннее графы были неориентированными.</p>
+                        <h2>Дуга</h2>
+                        <p>Дугой называется ребро, которое имеет направление.</p>
+                        <h2>Матрица смежности ориентированного графа</h2>
+                        <p>В отличие от неориентированного графа, в ориентированных ставится единица в том случае, если из i-той вершины идёт дуга в j-ую.</p>
+                        <p>В следующекем задании вам предстоит построить ориентированный граф. Чтобы приступить к заданию, нажмите на стрелку. Помните, что всегда сможете вернуться к теории.</p>
+                    </div>
+                </div>
+                <label for="theory"><div class="arrow"></div></label>
+            </section>
+            <input type="radio" name="field" value="task" id="fields">
+            <section class="fields">
+                <label for="fields"><div class="reverse arrow"></div></label>
+                <div class="editor field"><div id="editor"></div></div>
+                <div class="container">
+                    <div class="task field" id="task"></div>
+                    <div class="result field" class="iframe" id="iframe"></div>
+                    <div class="buttons">
+                        <button class="button" onclick="visualizeGraph('arrow')"><div class="visualize"></div></button>
+                        <button class="button check-btn" id="check"><div class="check"></div></button>
+                        <button onclick="location.href='./index.html'" class="button next-btn" id="next" disabled><div class="next"></div></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div>Технологии разработки цифровых ресурсов, P3320, Селиверстов Артём, 2016</div>
+        </footer>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src='http://d3js.org/d3.v3.min.js'></script>
+        <script src="http://chaijs.com/chai.js"></script>
+        <script src="./js/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/sigma/build/sigma.min.js"></script>
+        <script src="./js/sigma/build/plugins/sigma.parsers.json.min.js"></script>
+        <script src="./js/directed2.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
